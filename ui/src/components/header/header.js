@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header(){
     return(
-        <header>
+        <header className="header-black">
         <div className="container">
           <div className="nav">
             <div className="nav1"></div>

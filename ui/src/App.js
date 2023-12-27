@@ -35,15 +35,15 @@ function App() {
     </div>
  {/* Home-End --- Services-Begin */}
     <div className="section" id="services">
-      <div class="container rows">
-        <Tabs defaultActiveKey='services' class="tab">
+      <div className="container rows">
+        <Tabs defaultActiveKey='services' className="tab">
      <Tab className='tablinks' eventKey='services' title='services'>
-     <div class="container rows">
-        <div class="tabcontent" id="London">
-          <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+     <div className="container rows">
+        <div className="tabcontent" id="London">
+          <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Web Development</h4>
                   <p>
                     Expand your business outreach by capitalizing on web
@@ -52,9 +52,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Mobile Development</h4>
                   <p>
                     Optimize smart ways to deal with the customers.Hire skilled
@@ -63,9 +63,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>PWA development</h4>
                   <p>
                     Progressive Web Apps, it can be said that this is a new
@@ -74,9 +74,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Cross-Platform App</h4>
                   <p>
                     Using React Native and flutter to build single app that
@@ -85,9 +85,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>UX/UI Designs</h4>
                   <p>
                     intuitive, user-friendly products for the success of your
@@ -96,9 +96,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Digital Marketing</h4>
                   <p>
                     Data-driven strategies maximize lifecycle value by align
@@ -114,91 +114,12 @@ function App() {
      
      </Tab>
      <Tab  className='tablinks' eventKey='technology' title='technology'>
-     <div class="container rows">
-        <div class="tabcontent" id="London">
-          <div class="row">
-          </div>
-          </div>
-          </div>
-     </Tab>
-        </Tabs>
-      </div>
-      <div class="container rows">
-        <div class="tabcontent" id="London">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
-                  <h4>Web Development</h4>
-                  <p>
-                    Expand your business outreach by capitalizing on web
-                    development services.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
-                  <h4>Mobile Development</h4>
-                  <p>
-                    Optimize smart ways to deal with the customers.Hire skilled
-                    mobile app developer.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
-                  <h4>PWA development</h4>
-                  <p>
-                    Progressive Web Apps, it can be said that this is a new
-                    technology for interacting with the target audience.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
-                  <h4>Cross-Platform App</h4>
-                  <p>
-                    Using React Native and flutter to build single app that
-                    performs on both Android and iOS.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
-                  <h4>UX/UI Designs</h4>
-                  <p>
-                    intuitive, user-friendly products for the success of your
-                    business to create a human-friendly visual language.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
-                  <h4>Digital Marketing</h4>
-                  <p>
-                    Data-driven strategies maximize lifecycle value by align
-                    your technology and marketing execution.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tabcontent" id="Paris">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+     <div className="container rows">
+        <div className="tabcontent" id="London">
+          <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Mobile Development</h4>
                   <ul>
                     <li>Flutter Framework</li>
@@ -210,9 +131,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>UX/UI Designs</h4>
                   <ul>
                     <li>Sketch</li>
@@ -224,9 +145,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Web Development</h4>
                   <ul>
                     <li>HTML</li>
@@ -238,9 +159,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>E-commerce</h4>
                   <ul>
                     <li>Shopify</li>
@@ -251,9 +172,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Server Side</h4>
                   <ul>
                     <li>Node.js</li>
@@ -265,12 +186,16 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-        <div class="tabcontent" id="Tokyo">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+          </div>
+          </div>
+     </Tab>
+     <Tab className='tablinks' eventKey='industry' title='industry'>
+     <div className="container rows">
+        <div className="tabcontent" id="London">
+          <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Construction</h4>
                   <p>
                     Advanced software solutions that take Construction into the
@@ -279,9 +204,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Healthcare</h4>
                   <p>
                     Patient-friendly software that empowers healthcare industry
@@ -290,9 +215,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Retail & ECommerce</h4>
                   <p>
                     Engaging and exciting software solutions for modern retail.
@@ -300,9 +225,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>FinTech</h4>
                   <p>
                     Meet the demands of modern customers in speed and security
@@ -311,9 +236,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Travel & Hospitality</h4>
                   <p>
                     Extend the comfort of your resort with practical software
@@ -322,9 +247,9 @@ function App() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <div class="sectionBox">
-                <div class="sectionWords">
+            <div className="col-lg-4 col-md-4 col-sm-6">
+              <div className="sectionBox">
+                <div className="sectionWords">
                   <h4>Logistics</h4>
                   <p>
                     Use all the latest tech available to make your logistics run
@@ -334,7 +259,10 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+          </div>
+     </Tab>
+        </Tabs>
       </div>
     </div>
  {/* Services-End --- About-Begin */}
