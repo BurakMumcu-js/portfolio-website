@@ -1,29 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import  React from 'react';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
+import {Tab,Tabs} from "react-bootstrap"
 
 function App() {
   return (
    <>
-       <header>
-       {/* Header */}
-      <div class="container">
-        <div class="nav">
-          <div class="nav1"></div>
-          <div class="nav2">
-            <div class="menu"><a href="#about">about Me</a></div>
-            <div class="menu"><a href="#services">services</a></div>
-            <div class="menu"><a href="#">Blogs</a></div>
-            <div class="menu">
-              <a href="./template/portifolio.html">Portifolio</a>
-            </div>
-            <div class="menu"><a href="#contact">contact Me</a></div>
-          </div>
-        //  <div id="opened" onclick="openNav()">&#9776;</div>
-        </div>
-      </div>
-    </header>
-    <div class="Mainbackground" id="home">
-      <div class="topBackground"></div>
+    <Header/>
+    <div className="Mainbackground" id="home">
+      <div className="topBackground"></div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#001517"
@@ -32,10 +17,10 @@ function App() {
         ></path>
       </svg>
 
-      <div class="container fluids">
-        <div class="row">
-          <div class="col-md-12 col-lg-6">
-            <div class="screenWords">
+      <div className="container fluids">
+        <div className="row">
+          <div className="col-md-12 col-lg-6">
+            <div className="screenWords">
               <h1>Hello, I'm Irene.</h1>
               <p>
                 A full-stack developer. Specializing in building exceptional
@@ -43,56 +28,21 @@ function App() {
                 look at my latest projects. Remotely available UTC−1 to UTC+8.
                 project@irenemmassy.com Tel:+255 065 535 2744
               </p>
-              <div class="twoMainButton">
-                <div class="buttonMain">
-                  <a href="">Mobile Apps</a>
-                  <div class="hrizontalLine"></div>
-                </div>
-                <div class="buttonMain">
-                  <a href="">Websites</a>
-                  <div class="hrizontalLine diff"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 col-lg-6">
-            <div class="screenImage">
-              <img src="./images/main2.png" alt="irene blog" />
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="section" id="services">
+ {/* Home-End --- Services-Begin */}
+    <div className="section" id="services">
       <div class="container rows">
-        <div class="tab">
-          <button
-            class="tablinks"
-            onclick="openCity(event, 'London')"
-            id="defaultOpen"
-          >
-            services
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')">
-            technologies
-          </button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
-            industry
-          </button>
-        </div>
-      </div>
-      <div class="container rows">
+        <Tabs defaultActiveKey='services' class="tab">
+     <Tab className='tablinks' eventKey='services' title='services'>
+     <div class="container rows">
         <div class="tabcontent" id="London">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img
-                    src="https://image.flaticon.com/icons/svg/426/426487.svg"
-                    alt="Web Development"
-                  />
-                </div>
                 <div class="sectionWords">
                   <h4>Web Development</h4>
                   <p>
@@ -104,12 +54,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img
-                    src="./assets/images/img2.svg"
-                    alt="Mobile Development"
-                  />
-                </div>
                 <div class="sectionWords">
                   <h4>Mobile Development</h4>
                   <p>
@@ -121,9 +65,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img3.png" alt="PWA development" />
-                </div>
                 <div class="sectionWords">
                   <h4>PWA development</h4>
                   <p>
@@ -135,12 +76,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img
-                    src="./assets/images/img6.svg"
-                    alt="Cross-Platform App"
-                  />
-                </div>
                 <div class="sectionWords">
                   <h4>Cross-Platform App</h4>
                   <p>
@@ -152,9 +87,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img4.svg" alt="UX/UI Designs" />
-                </div>
                 <div class="sectionWords">
                   <h4>UX/UI Designs</h4>
                   <p>
@@ -166,9 +98,91 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img5.svg" alt="Digital Marketing" />
+                <div class="sectionWords">
+                  <h4>Digital Marketing</h4>
+                  <p>
+                    Data-driven strategies maximize lifecycle value by align
+                    your technology and marketing execution.
+                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+     
+     
+     </Tab>
+     <Tab  className='tablinks' eventKey='technology' title='technology'>
+     <div class="container rows">
+        <div class="tabcontent" id="London">
+          <div class="row">
+          </div>
+          </div>
+          </div>
+     </Tab>
+        </Tabs>
+      </div>
+      <div class="container rows">
+        <div class="tabcontent" id="London">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="sectionBox">
+                <div class="sectionWords">
+                  <h4>Web Development</h4>
+                  <p>
+                    Expand your business outreach by capitalizing on web
+                    development services.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="sectionBox">
+                <div class="sectionWords">
+                  <h4>Mobile Development</h4>
+                  <p>
+                    Optimize smart ways to deal with the customers.Hire skilled
+                    mobile app developer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="sectionBox">
+                <div class="sectionWords">
+                  <h4>PWA development</h4>
+                  <p>
+                    Progressive Web Apps, it can be said that this is a new
+                    technology for interacting with the target audience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="sectionBox">
+                <div class="sectionWords">
+                  <h4>Cross-Platform App</h4>
+                  <p>
+                    Using React Native and flutter to build single app that
+                    performs on both Android and iOS.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="sectionBox">
+                <div class="sectionWords">
+                  <h4>UX/UI Designs</h4>
+                  <p>
+                    intuitive, user-friendly products for the success of your
+                    business to create a human-friendly visual language.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <div class="sectionBox">
                 <div class="sectionWords">
                   <h4>Digital Marketing</h4>
                   <p>
@@ -184,9 +198,6 @@ function App() {
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img7.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Mobile Development</h4>
                   <ul>
@@ -201,9 +212,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img8.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>UX/UI Designs</h4>
                   <ul>
@@ -218,9 +226,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img9.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Web Development</h4>
                   <ul>
@@ -235,9 +240,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img10.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>E-commerce</h4>
                   <ul>
@@ -251,9 +253,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img11.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Server Side</h4>
                   <ul>
@@ -271,9 +270,6 @@ function App() {
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img12.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Construction</h4>
                   <p>
@@ -285,9 +281,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img13.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Healthcare</h4>
                   <p>
@@ -299,9 +292,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img14.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Retail & ECommerce</h4>
                   <p>
@@ -312,9 +302,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img15.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>FinTech</h4>
                   <p>
@@ -326,9 +313,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img16.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Travel & Hospitality</h4>
                   <p>
@@ -340,9 +324,6 @@ function App() {
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
               <div class="sectionBox">
-                <div class="sectionImage">
-                  <img src="./assets/images/img17.svg" alt="blockchain" />
-                </div>
                 <div class="sectionWords">
                   <h4>Logistics</h4>
                   <p>
@@ -356,21 +337,16 @@ function App() {
         </div>
       </div>
     </div>
-
+ {/* Services-End --- About-Begin */}
     <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="aboutMeImg">
-                  <img src="./images/gifs/about.jpg" alt="about me" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="about-me">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="about-me">
                   <h5>About me</h5>
-                  <div class="aboutHorizontalLine"></div>
+                  <div className="aboutHorizontalLine"></div>
                   <p>
                     I enjoy creating things that live on the internet, whether
                     that be websites, applications, or anything in between. My
@@ -398,65 +374,42 @@ function App() {
         </div>
       </div>
     </section>
-
-    <div class="contactme" id="contact">
-      <div class="contactOverlay">
-        <div class="container">
-          <div class="form">
+{/* About-End --- Contact-Begin */}
+    <div className="contactme" id="contact">
+      <div className="contactOverlay">
+        <div className="container">
+          <div className="form">
             <form action="" onSubmit="">
-              <div class="formWord">
+              <div className="formWord">
                 <h2>Say Hello!</h2>
                 <span>Full Name</span>
                 <br />
-                <input class="input100" type="text" name="fullName" required />
+                <input className="input100" type="text" name="fullName" required />
                 <br />
                 <span>Phone Number</span>
                 <br />
-                <input class="input100" type="text" name="phone" required />
+                <input className="input100" type="text" name="phone" required />
                 <br />
                 <span>Enter Email</span>
                 <br />
-                <input class="input100" type="text" name="email" required />
+                <input className="input100" type="text" name="email" required />
                 <br />
               </div>
-              <div class="formWord">
+              <div className="formWord">
                 <span>Message</span>
                 <br />
                 <textarea name="message" required></textarea>
                 <br />
                 <button>SUBMIT</button>
 
-                <div class="row">{showResults ? <Results /> : null}</div>
+                <div className="row"></div>
               </div>
             </form>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container" id="blogs">
-      <div class="article">
-        <h2>Recent Work</h2>
-        <hr />
-        <div class="rows">
-          <div class="shop col-lg-3 col-md-4 col-sm-6">
-            <div class="shopBack">
-              <img src=./assets/images/recent1.png alt="recent" />
-              <div class="shoplebal">
-                <a href="#">Read More</a>
-              </div>
-            </div>
-            <div class="shoptext">
-              <p>Sell And Buy App</p>
-              <h3>
-                Another app ever from zpnet company. Lorem Ipsum has been the
-                industry's
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<Footer/>
    </>
   );
 }

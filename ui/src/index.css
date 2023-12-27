@@ -1066,12 +1066,12 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  margin:2%;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 2%;
 }
 .footerNav p a {
   font-size: 12px;
