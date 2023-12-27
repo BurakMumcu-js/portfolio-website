@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Header from "../components/header/header";
 
 function WebScreen(props) {
     return(
         <>
+         <Header bgColor="white"/>
 <div className="banner">
 <div className="overlay">
     <div className="container">
     <h1>My Recent Mobile Apps </h1>
     <button>
-        <a href="#">Home</a>
+        <Link to="/">Home</Link>
     </button>
     </div>
     </div>

@@ -1,15 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import {HashLink} from 'react-router-hash-link';
 export default function Footer () {
     return(
         <footer>
         <div className="container">
           <div className="footerContainer">
             <div className="footerNav">
-              <p><a href="#about">About me</a></p>
-              <p><a href="#services">services</a></p>
-              <p><a href="./template/portifolio.html">Portifolio</a></p>
-              <p><a href="#contact">contact me</a></p>
+              <p><HashLink to="/#about">About me</HashLink></p>
+              <p><HashLink to="/#services">services</HashLink></p>
+              <p><HashLink to="./template/portfolio.html">Portfolio</HashLink></p>
+              <p><HashLink to="/#contact">contact me</HashLink></p>
             </div>
             <div className="footerMedias">
               <div className="footerMedia">
