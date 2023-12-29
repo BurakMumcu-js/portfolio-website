@@ -8,13 +8,12 @@ export default function HomeTechnologys(props) {
                 <div className="sectionWords">
                     <h4>{Technology.title}</h4>
                     <ul>
-                        {Technology.techs.map( (tech)=>{
-                            return(
+                        {Technology.techs.map( (tech)=> (
                                 <li key={tech.id}>
                                     {tech.name}
                                 </li>
                             )
-                        })}
+                        )}
                     </ul>
                 </div>
             </div>
