@@ -15,7 +15,6 @@ function App() {
     <Route path='/App' element={<AppScreen/>}/>
     <Route path='/Web' element={<WebScreen/>}/>
   </Routes>
-  <Footer/>
    </BrowserRouter>
   );
 }
